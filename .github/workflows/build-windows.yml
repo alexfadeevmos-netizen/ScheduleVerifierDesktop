@@ -23,7 +23,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build Windows EXE Installer
-        run: gradle createReleaseDistributable --stacktrace
+        run: gradle packageReleaseDistribution --stacktrace
 
       - name: Upload EXE Artifact
         uses: actions/upload-artifact@v4
